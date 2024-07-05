@@ -4,49 +4,45 @@ __If you have vs code, Use the keyboard shortcut Ctrl+Shift+V (Windows/Linux) or
 
 # Backend (navigate to the backend directory)
 > make sure you are in the backend directory
-1. Activate virtual environment 
-```bash
-.\venv\Scripts\activate
-```
-2. Start the backend server
-```bash
-python manage.py runserver
-```
-> If you face any issues, then follow the below steps for backend
-2. If above steps not working or facing any issues, create a new virtual env if not working; And install dependencies
+1. Create a python virtual env; And install dependencies
 ```bash
 python -m venv venv
 .\venv\Scripts\activate
 pip install -r requirements.txt
 ```
-3. First-time setup [may need if data is not available]
+2. First-time setup [may need if data is not available]
 ```bash
 python manage.py makemigrations
 python manage.py migrate
+```
+3. Start the backend server
+```bash
+python manage.py runserver
 ```
 
 # Frontend (navigate to the frontend directory)
 > make sure you are in the frontend directory
 ### Make sure you have node and vue is installed in your system
-1. Start the frontend server
-```bash
-npm run serve
-```
-2. Open the url in browser
-http://localhost:8080/ 
-
-> If you face any issues, then follow below steps
-3. Install dependencies
+1. Install dependencies
 ```bash
 npm i
 ```
-4. If you face any issues in the above step, Install deependencies using UI
+2. If you face any issues in the above step, Install deependencies using UI
 ```bash
 vue ui
 ```
-5. App UI will be opened in the browser, you can select plugins and dependencies to manually install them
+3. VUE Project Manager will be opened in the browser, add current directory.
++ Check for plugins and Dependencies in the side panel, select and install them
 
-6. Once dependecies installed, then follow the steps 1 and 2 to start the frontend server
+4. Once dependecies installed, then follow the below steps
+
+5. Start the frontend server
+```bash
+npm run serve
+```
+6. Open the url in browser
+http://localhost:8080/ 
+
 
 
 # App walk through
